@@ -12,7 +12,9 @@ This will create the build files in chrome-package/dist
    - Click on the "Load Unpacked" button on the left. 
    - On the dialog box, select the chrome-package folder (that you had copied over earlier).
    - You should now see the app listed on the Extensions page.
-3. Launch the Sample App from the tray. You will notice the UI loads.
-4. On the page, alt-click to show the contextual menu. Click on "Inspect". This will launch the console.
-5. You will see errors.
-6. If you downgrade to OS version 108 or lower and follow the same steps 1 through 5, you will see no console errors.
+
+#Test
+1. Launch the Sample App from the tray. You will notice the UI loads.
+2. On the page, alt-click to show the contextual menu. Click on "Inspect". This will launch the console.
+3. You will see errors.
+4. If you downgrade to OS version 108 or lower and follow the same steps in *Deploy* and *Test*, you will see no console errors.
