@@ -1,0 +1,69 @@
+{
+    "manifest_version": 2,
+    "name": "Sample App",
+    "short_name": "Sample App",
+    "description": "",
+    "version": "2.0.0",
+    "minimum_chrome_version": "60",
+    "permissions": [
+      "system.cpu",
+      "system.display",
+      "system.memory",
+      "system.storage",
+      "storage",
+      "unlimitedStorage",
+      "power",
+      "alwaysOnTopWindows",
+      "overrideEscFullscreen",
+      "idle",
+      "webview",
+      {
+        "fileSystem": [
+          "write",
+          "directory",
+          "retainEntries"
+        ]
+      }
+    ],
+    "externally_connectable": {
+      "matches": [
+        "*://localhost/*"
+      ]
+    },
+    "icons": {
+    },
+    "app": {
+      "background": {
+        "scripts": [
+          "background.js"
+        ]
+      }
+    },
+    "webview": {
+      "partitions": [
+        {
+          "name": "sample_app",
+          "accessible_resources": [
+            "dist/index.html",
+            "dist/*",
+            "dist/assets/*",
+            "*.json",
+            "*.html",
+            "*.ttf",
+            "*.woff",
+            "*.css",
+            "*.gif",
+            "*.js",
+            "*.png",
+            "*.jpg",
+            "*.mp4",
+            "*.woff2",
+            "*.svg",
+            "*.ico"
+          ]
+        }
+      ]
+    },
+    "kiosk_enabled": true,
+    "offline_enabled": true
+  }
