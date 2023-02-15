@@ -13,7 +13,7 @@ This will create the build files in chrome-package/dist
    - On the dialog box, select the chrome-package folder (that you had copied over earlier).
    - You should now see the app listed on the Extensions page.
 
-#Test
+# Test
 1. Launch the Sample App from the tray. You will notice the UI loads.
 2. On the page, alt-click to show the contextual menu. Click on "Inspect". This will launch the console.
 3. You will see errors.
